@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">PRODUCT</h1>
+        <label for="prodName">Product Name: </label>
+        <input type="text" id="prodName" class="form-control">
+        <label for="prodPrice">Product Price: </label>
+        <input type="text" id="prodPrice" class="form-control">
+        <label for="prodCat">Product Catergory: </label>
+        <input type="text" id="prodCat" class="form-control">
+        <label for="prodDesc">Product Description: </label>
+        <input type="text" id="prodDesc" class="form-control">
+        <button class="btn btn-primary my-3" onclick="add()" id="addButton">Sumbit</button>
+        <button class="btn btn-primary my-3" onclick="updateObJ()" id="updateButton" disabled>Update</button>
+
+        <table class="table table-striped">
+            <thead>
+                <th>index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Catergory</th>
+                <th>Description</th>
+                <th><button class="btn btn-danger deleteItem" onclick="deleteAll()">Delete all</button></th>
+                <th>Edit</th>
+            </thead>
+            <tbody id="row">
+                
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
